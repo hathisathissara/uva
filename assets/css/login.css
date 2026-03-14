@@ -1,0 +1,132 @@
+/* 1. BACKGROUND IMAGE SETTINGS */
+body {
+  /* Technology / Coding Background Image */
+  background: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2070&auto=format&fit=crop")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark Overlay to make text readable */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* 60% Dark Overlay */
+  z-index: 1;
+}
+
+/* 2. GLASSMORPHISM CARD */
+.glass-card {
+  position: relative;
+  z-index: 2; /* Sit on top of overlay */
+  background: rgba(255, 255, 255, 0.1); /* Low opacity white */
+  backdrop-filter: blur(15px); /* BLUR EFFECT */
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 40px 30px;
+  color: white;
+  max-width: 450px;
+  width: 100%;
+}
+
+.login-header h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* 3. INPUT FIELDS STYLING */
+.form-control {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 30px; /* Rounded Inputs */
+  padding: 12px 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Glassmorphism Input Group Styling */
+.input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none; /* දකුණු පැත්තේ ඉර අයින් කරනවා */
+  margin-bottom: 0; /* Bootstrap margin එක අයින් කරනවා */
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.15); /* Input එකේ පාටමයි */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Input එකේ border එකමයි */
+  border-left: none; /* වම් පැත්තේ ඉර අයින් කරනවා */
+  color: rgba(255, 255, 255, 0.7);
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s;
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.input-group:focus-within .btn-glass,
+.input-group:focus-within .form-control {
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Click කළාම සම්පූර්ණ කොටුවම ටිකක් තද පාට වෙනවා */
+}
+
+/* 4. BUTTON STYLING */
+.btn-login {
+  width: 100%;
+  border-radius: 30px;
+  padding: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btn-login:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  color: white;
+}
+
+/* Alert Styling */
+.alert {
+  background: rgba(220, 53, 69, 0.8);
+  border: none;
+  color: white;
+  backdrop-filter: blur(5px);
+}

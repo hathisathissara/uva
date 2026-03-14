@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+   
 </head>
 
 <body>
@@ -36,8 +37,7 @@
                     <li><a href="#academics">Academics</a></li>
                     <li><a href="#">Research</a></li>
                     <li><a href="#">Campus Life</a></li>
-                    <li><a href="staff/login.html">Staff Login</a></li>
-                    <li><a href="#" class="cta-btn">Apply Now</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </nav>
 
